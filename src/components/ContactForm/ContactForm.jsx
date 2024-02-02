@@ -49,8 +49,7 @@ export class ContactForm extends Component {
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (existingContact) {
-        
-         Notify.failure(`${name} is already in your contacts!`, { position: 'center-top' });  
+       Notify.failure(`${name} is already in your contacts!`, { position: 'center-top' });  
         return;
       }
        else {
@@ -89,7 +88,7 @@ export class ContactForm extends Component {
             onChange={this.handleNameChange}
           />
         </label>
-        
+
         <label className={css.formField}>
           <p className={css.formLabel}>Number</p>
           <input
